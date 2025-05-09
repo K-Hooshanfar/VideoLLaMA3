@@ -20,23 +20,8 @@ VideoLLaMA 3: Frontier Multimodal Foundation Models for Video Understanding</a><
 [![arXiv](https://img.shields.io/badge/Arxiv-2501.13106-AD1C18.svg?logo=arXiv)](https://arxiv.org/abs/2501.13106) 
 </h5>
 
-
 ## 🌟 Introduction
 VideoLLaMA 3 is a series of multimodal foundation models with frontier image and video understanding capacity.
-
-<img src="assets/performance.png" style="max-width: 100%; height: auto;">
-
-<details>
-  <summary>💡Click here to show detailed performance on video benchmarks</summary>
-  <img src="https://github.com/user-attachments/assets/118e7a56-0c3e-4132-b0b5-f516d0654338" style="max-width: 100%; height: auto;">
-  <img src="https://github.com/user-attachments/assets/3524cefe-01d3-4031-8620-f85dc38e3d02" style="max-width: 100%; height: auto;">
-</details>
-
-<details>
-  <summary>💡Click here to show detailed performance on image benchmarks</summary>
-  <img src="assets/results_image_2b.png" style="max-width: 100%; height: auto;">
-  <img src="assets/results_image_7b.png" style="max-width: 100%; height: auto;">
-</details>
 
 ## 🛠️ Requirements and Installation
 
@@ -81,6 +66,14 @@ cd VideoLLaMA3
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
+
+For solving this issue: **ImportError: libGL.so.1: cannot open shared object file: No such file or directory**
+
+```bash
+pip uninstall -y opencv-python
+pip install     opencv-python-headless
+```
+
 
 ## :earth_americas: Model Zoo
 
