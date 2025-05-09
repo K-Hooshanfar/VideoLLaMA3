@@ -73,7 +73,7 @@ For solving this issue: **ImportError: libGL.so.1: cannot open shared object fil
 pip uninstall -y opencv-python
 pip install     opencv-python-headless
 ```
-
+ (opencv-python-headless-4.11.0.86)
 
 ## :earth_americas: Model Zoo
 
