@@ -75,6 +75,12 @@ pip install     opencv-python-headless
 ```
  (opencv-python-headless-4.11.0.86)
 
+
+For solving this issue: **FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'**
+
+ conda install -c conda-forge ffmpeg
+
+
 ## :earth_americas: Model Zoo
 
 | Model                | Base Model   | HF Link                                                      |
