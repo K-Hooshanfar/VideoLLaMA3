@@ -78,7 +78,26 @@ pip install     opencv-python-headless
 
 For solving this issue: **FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'**
 
+```bash
  conda install -c conda-forge ffmpeg
+```
+
+
+this method i better:
+
+```bash
+import os, sys, shutil
+
+# Compute conda-env bin directory from sys.executable
+conda_bin = os.path.dirname(sys.executable)
+
+# Prepend it to PATH
+os.environ["PATH"] = conda_bin + os.pathsep + os.environ.get("PATH", "")
+
+# Verify
+print("ffprobe now at:", shutil.which("ffprobe"))
+```
+
 
 
 ## :earth_americas: Model Zoo
